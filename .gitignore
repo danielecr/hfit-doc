@@ -1,0 +1,61 @@
+# Generated documentation output
+site/
+build/
+dist/
+_site/
+
+# MkDocs generated files
+*.pyc
+__pycache__/
+.cache/
+
+# PDF exports
+*.pdf
+
+# Node.js dependencies (if using any JS tools)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+
+# Log files
+*.log
+logs/
+
+# Generated assets from embed_generator
+embedded_assets.go
+temp_*
+
+# Keep source files (explicitly)
+!*.md
+!*.yml
+!*.yaml
+!mkdocs.yml
+!requirements.txt
+!docs/
+!src/

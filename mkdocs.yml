@@ -42,6 +42,8 @@ nav:
     - Architecture: getting-started/architecture.md
     - Quick Start: getting-started/quick-start.md
     - Use Cases: getting-started/use-cases.md
+  - Developer Workflow:
+    - Complete Guide: guides/developer-workflow.md
   - Server (hfitd):
     - Installation: server/installation.md
     - Configuration: server/configuration.md
@@ -85,7 +87,11 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.details
@@ -106,5 +112,9 @@ extra:
       link: https://github.com/sponsors/danielecr
       name: Sponsor on GitHub
   generator: false
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
+  - js/mermaid-init.js
 
 copyright: Copyright &copy; 2025 Daniele Cruciani
